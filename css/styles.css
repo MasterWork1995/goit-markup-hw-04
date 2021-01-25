@@ -150,7 +150,7 @@ img {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.142;
   letter-spacing: 0.02em;
 }
 
@@ -325,6 +325,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 
+  display: flex;
   background-color: var(--prime-bgc);
   color: var(--primary-white-color);
 }
@@ -337,6 +338,7 @@ img {
 }
 
 .footer-address {
+  margin-right: 70px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
