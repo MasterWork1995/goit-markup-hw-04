@@ -10,6 +10,7 @@
   --portfolio-header-line: 1px solid #ececec;
   --portfolio-border-item: 1px solid #eeeeee;
   --hero-overlay: rgba(47, 48, 58, 0.4);
+  --primery-icons-color: #AFB1B8;
 }
 
 body {
@@ -143,6 +144,7 @@ img {
 }
 
 .contacts-link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -161,6 +163,21 @@ img {
   color: var(--accent-color);
 }
 
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
 /* ====== ГЕРОЙ ====== */
 
 .hero {
@@ -170,6 +187,7 @@ img {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+  background-size: cover;
 
   background-image: linear-gradient(
       to right,
@@ -225,33 +243,6 @@ img {
   margin-right: 30px;
 }
 
-.charact-list .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-
-  background-color: var(--second-bgc);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icons-antenna::before {
-  background-image: url(../images/icons/antenna.png);
-}
-
-.icons-clock::before {
-  background-image: url(../images/icons/clock.png);
-}
-
-.icons-diagram::before {
-  background-image: url(../images/icons/diagram.png);
-}
-
-.icons-astronaut::before {
-  background-image: url(../images/icons/astronaut.png);
-}
-
 .charact-title {
   text-align: left;
   text-transform: uppercase;
@@ -269,6 +260,21 @@ img {
 
 .charact-section {
   padding-bottom: 0;
+}
+
+.thumb-charact {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--second-bgc);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charact-decoration {
+  width: 70px;
+  height: 70px;
 }
 
 /* ====== ЧТО МЫ ДЕЛАЕМ ====== */
@@ -291,18 +297,19 @@ img {
   display: flex;
 }
 
-.teame-list .item:not(:last-child) {
+.teame-list>.item:not(:last-child) {
   margin-right: 30px;
 }
 
 .teame-subsection {
   background-color: var(--primary-white-color);
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 0px;
 }
 
 .teame-text {
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.87;
@@ -317,6 +324,99 @@ img {
 .what-we-do-title,
 .teame-title {
   margin-bottom: 50px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--primery-icons-color);
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  margin: 12px 12px;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-icons:hover,
+.social-icons:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
+/* ====== ПОСТОЯННЫЕ КЛИНТЫ ====== */
+
+.clients-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--primery-icons-color);
+  border: 1px solid var(--primery-icons-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon-logo-1 {
+  width: 44px;
+  height: 49px;
+}
+
+.icon-logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.icon-logo-3 {
+  width: 41px;
+  height: 43px;
+}
+
+.icon-logo-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.icon-logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.icon-logo-6 {
+  width: 88px;
+  height: 45px;
 }
 
 /* ====== ФУТЕР ====== */
