@@ -11,6 +11,7 @@
   --portfolio-border-item: 1px solid #eeeeee;
   --hero-overlay: rgba(47, 48, 58, 0.4);
   --primery-icons-color: #AFB1B8;
+  --footer-social-bgc: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -337,10 +338,13 @@ img {
 }
 
 .social-link {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.teame-social-link {
   fill: var(--primery-icons-color);
 }
 
@@ -457,6 +461,38 @@ img {
 
 .footer-address .footer-link:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.social-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-item {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-social-bgc);
 }
 
 /* ====== ПОРТФОЛИО ====== */
